@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="volleyball-transparent.png" class="logo"></a>
+            <div class="menu" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="contentBox">
+                <h1>Just Do It.</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                    dicta sunt explicabo</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="contentImg">
+                <img src="21832-2-cristiano-ronaldo-hd_400x400.png" class="ronaldo">
+            </div>
+        </div>
+        <div class="social">
+            <ul class="sci">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script type="text/javascript">
+    function toggleMenu(){
+        const menu = document.querySelector('.menu');
+        const navigation = document.querySelector('.navigation');
+        navigation.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+</script>
+</html>
